@@ -99,16 +99,7 @@ import firebase from "firebase/app";
 import "firebase/database";
 import VueQrcode from "vue-qrcode";
 import { v1 as uuidv1 } from "uuid";
-var firebaseConfig = {
-  apiKey: "AIzaSyAPk8Wn9bSNsaOH04P-suidqNIbRaVetRk",
-  authDomain: "trafficlight-c64c0.firebaseapp.com",
-  databaseURL: "https://trafficlight-c64c0.firebaseio.com",
-  projectId: "trafficlight-c64c0",
-  storageBucket: "trafficlight-c64c0.appspot.com",
-  messagingSenderId: "486725043304",
-  appId: "1:486725043304:web:6263a886698219b21de7dd",
-  measurementId: "G-4HR694751D",
-};
+import firebaseConfig from "@/store/firebase-config.json";
 firebase.initializeApp(firebaseConfig);
 export default {
   name: "Home",
